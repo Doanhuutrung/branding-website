@@ -1,0 +1,82 @@
+footer
+  background-color: $gray
+  padding-top: 159px
+  padding-bottom: 145px
+  padding-left: 189px
+  .footer-container
+    position: relative
+    max-width: 1300px
+    margin: 0 auto
+    display: flex
+    align-items: center
+  .footer-menu
+    display: flex
+    justify-content: center
+    gap: 30px
+    nav
+      display: flex
+      gap: 115px
+      a
+        font-size: calc( 18 / 16 * 1rem )
+        color: white
+        position: relative
+        letter-spacing: 2.7px
+        color: $line-hover
+      a::after
+        content: ' '
+        display: inline-block
+        position: absolute
+        top: 138%
+        left: -21%
+        background-color: white
+        width: 135%
+        height: 4px
+  .footer-logo 
+    position: absolute
+    right: -6%
+    top: -28px
+    padding-right: 260px
+    padding-left: 37px
+    background: #EA572A
+    padding-top: 24px
+    height: 93px
+  .footer-list
+    display: flex
+    gap: 113px
+    .footer-menu-item:nth-child(1)
+      a
+        color: white
+    .footer-menu-item:nth-child(2)
+      margin-left: 9px
+      margin-top: -2px
+    .footer-menu-item:nth-child(3)
+      margin-left: -7px
+      margin-top: -1px
+    .footer-menu-item:nth-child(4)
+      margin-left: -15px
+      margin-top: -1px
+  +mobile 
+    padding: 50px 0 0 0 
+    .footer-container
+      display: block
+    .footer-list
+      flex-direction: column
+      justify-content: center
+      gap: 35px
+      margin: 0
+      padding: 0
+      align-items: center
+      a
+        align-self: center
+      .footer-menu-item:nth-child(2)
+        margin: 0
+      .footer-menu-item:nth-child(3)
+        margin: 0
+      .footer-menu-item:nth-child(4)
+        margin: 0
+    .footer-logo
+      position: static
+      margin-top: 50px
+      padding: 0
+      img
+        padding: 27px

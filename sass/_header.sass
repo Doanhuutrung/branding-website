@@ -1,0 +1,163 @@
+@import '_variables'
+
+header
+  background-color: $purple
+  display: flex
+  justify-content: center
+  margin-left: -297px
+  .header
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+  .navigation-left
+    display: flex
+  .menu-item
+    position: relative
+    font-size: 18px
+    text-transform: uppercase
+    padding: 52px 0px
+    color: $line-hover
+    text-align: center
+    letter-spacing: 2.7px
+    height: 129px
+  .menu1
+    width: 373px
+    padding-left: 17px
+    cursor: none
+  .menu2
+    padding-left: 15px
+    width: 360px
+  .menu3
+    padding-right: 28px
+    width: 300px
+  .menu-item:not(.menu1):hover
+    text-transform: lowercase !important
+    background-color: $purple-light
+    color: white
+  .menu-item:not(.menu1)::after
+    content: ' '
+    display: inline-block
+    background-color: $line-hover
+    position: absolute
+    width: 44%
+    height: 4px
+    bottom: 31%
+    right: 27%
+    transition: transform 0.3s ease
+    transform: scaleX(0)
+    transform-origin: bottom right
+  .menu-item:hover::after
+    transform: scaleX(1)
+    transform-origin: bottom left
+  .active
+    text-transform: lowercase
+    background-color: $purple-light
+    position: relative
+    color: white
+  .active::before
+    content: ''
+    background-color: white
+    position: absolute
+    width: 44%
+    height: 4px
+    bottom: 31%
+    right: 27%
+  .navigation-right
+    display: flex
+    align-items: center
+    gap: 40px
+    top: 4%
+    left: 16.5%
+    position: relative
+    .nav-icon
+      color: $line-hover
+      position: relative
+      i::after
+        content: ' '
+        position: absolute
+        height: 4px
+        background-color: white
+      .fa-comment-dots
+        margin-left: -1px
+      .fa-comment-dots::after
+        width: 124%
+        bottom: -67%
+        right: 2%
+      .fa-cart-shopping::after
+        width: 111%
+        bottom: -67%
+        right: -14%
+    ul
+      display: flex
+      gap: 32px
+      padding: 0
+      margin-bottom: 0
+  .logo
+    position: relative
+    width: 100%
+    height: auto
+    margin: 0
+  .menu-mobile
+    display: none
+  input[type="checkbox"]:checked ~ .navigation-left
+    display: flex
+    flex-direction: column
+    position: fixed
+    left: 0
+    top: 0
+    width: 60%
+    height: 100%
+    background-color: $purple
+    padding-top: 73px
+    animation-name: showMenu
+    animation-duration: 0.7s
+    @keyframes showMenu
+      0%
+        width: 0%
+      100%
+       width: 60%
+    a
+      padding: 53px 0px
+  +mobile
+    margin-left: 0
+    padding: 20px
+    display: block
+    position: relative
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 100
+    .header    
+      gap: 20px
+      justify-content: flex-start
+    .navigation-left
+      display: none
+    .navigation-right
+      left: 0
+      gap: 10px
+      ul
+        order: 1
+      .nav-icon
+        .fa-comment-dots::after
+          bottom: -20%
+        .fa-cart-shopping::after
+          bottom: -20%
+    .menu-mobile
+      order: 1
+      display: block
+      color: white
+      font-size: 1.5rem
+      font-weight: 500
+      position: absolute
+      right: 4%
+      z-index: 100
+    .menu1
+      width: 100%
+    .menu2
+      width: 100%
+    .menu3
+      width: 100%
+    .logo
+      margin-left: -20px
+    
