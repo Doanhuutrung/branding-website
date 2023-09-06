@@ -184,19 +184,19 @@ button {
 
 @font-face {
   font-family: "BuiltTitlingRegular";
-  src: url("../fonts/BuiltTitlingRg-Regular400.ttf") format("truetype");
+  src: url("../fonts/font/BuiltTitlingRg-Regular400.ttf") format("truetype");
 }
 @font-face {
   font-family: "RobotoRegular";
-  src: url("../fonts/Roboto/RobotoCondensed-Regular.ttf") format("truetype");
+  src: url("../fonts/font/Roboto/RobotoCondensed-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "RobotoBold";
-  src: url("../font/Roboto/RobotoCondensed-Bold.ttf") format("truetype");
+  src: url("../fonts/font/Roboto/RobotoCondensed-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "BuiltTitlingBoldItalic";
-  src: url("../fonts/BuiltTitlingRg-BoldItalic700.ttf") format("truetype");
+  src: url("../fonts/font/BuiltTitlingRg-BoldItalic700.ttf") format("truetype");
 }
 body {
   font-family: "BuiltTitlingRegular", sans-serif;
@@ -864,6 +864,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
     font-size: 2.5rem;
     text-align: center;
     letter-spacing: 2px;
+    font-family: "BuiltTitlingRegular";
   }
   .blog .blog-description {
     width: 100%;
