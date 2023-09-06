@@ -184,6 +184,7 @@ button {
 
 @font-face {
   font-family: "BuiltTitlingRegular";
+<<<<<<< HEAD
   src: url("../fonts/font/BuiltTitlingRg-Regular400.ttf") format("truetype");
 }
 @font-face {
@@ -197,6 +198,21 @@ button {
 @font-face {
   font-family: "BuiltTitlingBoldItalic";
   src: url("../fonts/font/BuiltTitlingRg-BoldItalic700.ttf") format("truetype");
+=======
+  src: url("../fonts/BuiltTitlingRg-Regular400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/Roboto/RobotoCondensed-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../font/Roboto/RobotoCondensed-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BuiltTitlingBoldItalic";
+  src: url("../fonts/BuiltTitlingRg-BoldItalic700.ttf") format("truetype");
+>>>>>>> 95465f3ec6f12354e14151b4cfcdece3368feb15
 }
 body {
   font-family: "BuiltTitlingRegular", sans-serif;
@@ -864,7 +880,10 @@ header input[type=checkbox]:checked ~ .navigation-left a {
     font-size: 2.5rem;
     text-align: center;
     letter-spacing: 2px;
+<<<<<<< HEAD
     font-family: "BuiltTitlingRegular";
+=======
+>>>>>>> 95465f3ec6f12354e14151b4cfcdece3368feb15
   }
   .blog .blog-description {
     width: 100%;
