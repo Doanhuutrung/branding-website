@@ -1,3 +1,3 @@
-Build a responsive website from adobe Xd
-#github page: https://doanhuutrung.github.io/branding-website/
-#vercel: https://branding-website-six.vercel.app/
+<br> Build a responsive website from adobe Xd </br>
+<br> github page: https://doanhuutrung.github.io/branding-website/ </br>
+<br> vercel: https://branding-website-six.vercel.app/ </br>
