@@ -184,19 +184,19 @@ button {
 
 @font-face {
   font-family: "BuiltTitlingRegular";
-  src: url("../fonts/font/BuiltTitlingRg-Regular400.ttf") format("truetype");
+  src: url("../fonts/BuiltTitlingRg-Regular400.ttf") format("truetype");
 }
 @font-face {
   font-family: "RobotoRegular";
-  src: url("../fonts/font/Roboto/RobotoCondensed-Regular.ttf") format("truetype");
+  src: url("../fonts/Roboto/RobotoCondensed-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "RobotoBold";
-  src: url("../fonts/font/Roboto/RobotoCondensed-Bold.ttf") format("truetype");
+  src: url("../font/Roboto/RobotoCondensed-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "BuiltTitlingBoldItalic";
-  src: url("../fonts/font/BuiltTitlingRg-BoldItalic700.ttf") format("truetype");
+  src: url("../fonts/BuiltTitlingRg-BoldItalic700.ttf") format("truetype");
 }
 body {
   font-family: "BuiltTitlingRegular", sans-serif;
@@ -863,7 +863,6 @@ header input[type=checkbox]:checked ~ .navigation-left a {
     font-size: 2.5rem;
     text-align: center;
     letter-spacing: 2px;
-    font-family: "BuiltTitlingRegular";
   }
   .blog .blog-description {
     width: 100%;
@@ -1211,7 +1210,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
 }
 
 .staff {
-  background-image: url("../img/staff.png");
+  background-image: url("../images/staff.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -9px;
@@ -1344,14 +1343,14 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   position: absolute;
   display: block;
   content: "";
-  background: url(../img/decoration_map.png) center/cover no-repeat;
+  background: url(../images/decoration_map.png) center/cover no-repeat;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 }
 .contact .contact-container {
-  background-image: url(../img/map.png);
+  background-image: url(../images/map.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
