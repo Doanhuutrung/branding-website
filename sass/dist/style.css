@@ -464,7 +464,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   background-color: white;
 }
 .home .home-title {
-  font-size: 3.3675rem;
+  font-size: calc($font-size / 16 * 1rem);
   font-weight: 400;
   letter-spacing: 5.4px;
   margin: 0;
@@ -529,7 +529,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   letter-spacing: 2px;
   font-family: "BuiltTitlingRegular";
   font-weight: 400;
-  font-size: 1.625rem;
+  font-size: calc( 26 / 16 * 1rem );
 }
 .home .home-heart::after {
   content: "";
@@ -597,8 +597,8 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   top: 3px;
 }
 .product .product-item {
-  width: 15.9375rem;
-  height: 28.5625rem;
+  width: calc( 255 / 16 * 1rem );
+  height: calc(457 / 16 * 1rem);
 }
 .product .top {
   height: 241px;
@@ -653,10 +653,10 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   color: white;
 }
 .product .product3 .top {
-  height: 13.5rem;
+  height: calc(216 / 16 * 1rem);
 }
 .product .fa-capsules {
-  font-size: 5.4525rem;
+  font-size: calc( 87.24 / 16 * 1rem );
   position: absolute;
   top: 50%;
   left: 50%;
@@ -674,7 +674,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   letter-spacing: 1.5px;
 }
 .product .card-title {
-  font-size: 1.375rem;
+  font-size: calc( 22 / 16 * 1rem );
   font-family: "BuiltTitlingBoldItalic";
   letter-spacing: 2.4px;
   padding-left: 1px;
@@ -695,7 +695,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
 }
 .product .product-introduction h2 {
   width: 424px;
-  font-size: 3.3675rem;
+  font-size: calc(53.88 / 16 * 1rem);
   color: white;
   font-weight: 400;
   letter-spacing: 5.4px;
@@ -717,7 +717,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   padding: 54px 132px;
   color: white;
   letter-spacing: 3px;
-  font-size: 1.125rem;
+  font-size: calc( 18 / 16 * 1rem );
   cursor: pointer;
   text-align: center;
   margin-left: 4px;
@@ -774,7 +774,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
     width: 100%;
   }
   .product .product2 .top {
-    height: 13.5rem;
+    height: calc(216 / 16 * 1rem);
   }
   .product .card-icon {
     right: 8%;
@@ -815,7 +815,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   font-family: "BuiltTitlingBoldItalic";
 }
 .blog .blog-title {
-  font-size: 3.3675rem;
+  font-size: calc($font-size / 16 * 1rem);
   font-weight: 400;
   letter-spacing: 5.4px;
   margin: 0;
@@ -839,8 +839,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
 .blog .blog-img img {
   width: 766px;
   height: 886px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (max-width: 767.98px) {
   .blog {
@@ -913,7 +912,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   letter-spacing: 1.5px;
 }
 .event .event-title {
-  font-size: 3.3675rem;
+  font-size: calc($font-size / 16 * 1rem);
   font-weight: 400;
   letter-spacing: 5.4px;
   margin: 0;
@@ -939,7 +938,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
 }
 .event .event-calendar .event-date {
   color: #E5E0F0;
-  font-size: 2rem;
+  font-size: calc( 32 / 16 * 1rem );
   letter-spacing: 3px;
 }
 .event .calendar-wrap {
@@ -1040,7 +1039,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   gap: 39px;
 }
 .package .package-title {
-  font-size: 3.3675rem;
+  font-size: calc($font-size / 16 * 1rem);
   font-weight: 400;
   letter-spacing: 5.4px;
   margin: 0;
@@ -1151,16 +1150,13 @@ header input[type=checkbox]:checked ~ .navigation-left a {
     font-size: 1.5rem;
   }
 }
-.register .register-form form input::-moz-placeholder {
-  color: #414042;
-}
 .register .register-form form input::placeholder {
   color: #414042;
 }
 .register .register-form form button {
   align-self: baseline;
   background-color: #414042;
-  font-size: 2rem;
+  font-size: calc( 32 / 16 * 1rem );
   padding-top: 12px;
   padding-bottom: 8px;
   padding-left: 3px;
@@ -1171,7 +1167,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   margin-top: -1px;
 }
 .register .register-title {
-  font-size: 6rem;
+  font-size: calc($font-size / 16 * 1rem);
   font-weight: 400;
   letter-spacing: 5.4px;
   margin: 0;
@@ -1214,7 +1210,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
 }
 
 .staff {
-  background-image: url(../img/staff.png);
+  background-image: url("../img/staff.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -9px;
@@ -1252,7 +1248,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   margin-bottom: 0;
 }
 .staff .staff-title {
-  font-size: 3.3675rem;
+  font-size: calc($font-size / 16 * 1rem);
   font-weight: 400;
   letter-spacing: 5.4px;
   margin: 0;
@@ -1292,7 +1288,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
 }
 .staff .staff-text h3 {
   margin-top: 16px;
-  font-size: 2rem;
+  font-size: calc( 32 / 16 * 1rem );
   letter-spacing: 3.2px;
   font-weight: 400;
   width: 160px;
@@ -1301,7 +1297,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   width: 43%;
   display: flex;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: calc( 32 / 16 * 1rem );
 }
 .staff .fa-bullhorn {
   background-color: #7853A2;
@@ -1381,7 +1377,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   padding-left: 35px;
 }
 .contact .contact-content h4 {
-  font-size: 3rem;
+  font-size: calc($font-size / 16 * 1rem);
   font-weight: 400;
   letter-spacing: 5.4px;
   margin: 0;
@@ -1426,7 +1422,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   padding: 32px 35px 40px 35px;
 }
 .contact .contact-form h2 {
-  font-size: 3rem;
+  font-size: calc($font-size / 16 * 1rem);
   font-weight: 400;
   letter-spacing: 5.4px;
   margin: 0;
@@ -1454,9 +1450,6 @@ header input[type=checkbox]:checked ~ .navigation-left a {
     font-size: 1.5rem;
   }
 }
-.contact .contact-form form input::-moz-placeholder {
-  color: white;
-}
 .contact .contact-form form input::placeholder {
   color: white;
 }
@@ -1468,9 +1461,6 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   color: white;
   outline: none;
   height: 168px;
-}
-.contact .contact-form form textarea::-moz-placeholder {
-  color: white;
 }
 .contact .contact-form form textarea::placeholder {
   color: white;
@@ -1540,7 +1530,7 @@ footer .footer-menu nav {
   gap: 115px;
 }
 footer .footer-menu nav a {
-  font-size: 1.125rem;
+  font-size: calc( 18 / 16 * 1rem );
   color: white;
   position: relative;
   letter-spacing: 2.7px;
@@ -1620,4 +1610,4 @@ footer .footer-list .footer-menu-item:nth-child(4) {
   footer .footer-logo img {
     padding: 27px;
   }
-}/*# sourceMappingURL=style.css.map */
+}

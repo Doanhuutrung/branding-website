@@ -1214,7 +1214,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
 }
 
 .staff {
-  background-image: url(../img/staff.png);
+  background-image: url("../img/staff.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -9px;
@@ -1620,4 +1620,4 @@ footer .footer-list .footer-menu-item:nth-child(4) {
   footer .footer-logo img {
     padding: 27px;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=styles.css.map */

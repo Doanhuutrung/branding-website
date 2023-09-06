@@ -1,0 +1,877 @@
+@import '_reset'
+@import '_variables'
+@import '_layout'
+@import '_mixin'
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap')
+@font-face 
+  font-family: 'BuiltTitlingRegular' 
+  src: url('../fonts/BuiltTitlingRg-Regular400.ttf') format("truetype")
+@font-face
+  font-family: 'RobotoRegular' 
+  src: url('../fonts/Roboto/RobotoCondensed-Regular.ttf') format("truetype")  
+@font-face
+  font-family: 'RobotoBold' 
+  src: url('../font/Roboto/RobotoCondensed-Bold.ttf') format("truetype")
+@font-face
+  font-family: 'BuiltTitlingBoldItalic' 
+  src: url('../fonts/BuiltTitlingRg-BoldItalic700.ttf') format("truetype")  
+
+body 
+  font-family: 'BuiltTitlingRegular', sans-serif
+  
+a
+  text-decoration: none
+
+li 
+  list-style: none
+
+.container
+  overflow-x: clip
+  position: relative
+  width: 100%
+  margin: 0 auto
+  +desktop
+    max-width: 100%
+    margin: 0 auto
+    width: 100%
+    overflow: hidden
+    position: relative
+    min-width: 1600px
+  +mobile 
+    max-width: 100%
+
+  .transform
+    opacity: 1
+    transition: opacity ease .25s
+  .transform:hover
+    opacity: .8
+
+@import '_header'
+
+.home
+  background-color: $purple
+  width: 100%
+  padding: 166px 151px 102px 246px
+  margin-top: -5px
+  .home-container
+    max-width: 1300px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    position: relative
+  .home-content
+    position: relative
+  .home-line
+    position: relative
+    position: absolute
+    width: 1px 
+    height: 185.5%
+    top: -2%
+    right: 108.5%
+    background-color: white
+  .home-title
+    +titleSection(53.88)
+    width: 350px
+    color: white
+    position: relative
+    z-index: 50
+  .home-paragraph
+    position: absolute
+    height: 197px
+    top: 29.5%
+    left: 52%
+    padding-top: 25px
+    padding-left: 46px
+    padding-right: 15px
+    padding-bottom: 30px
+    background-color: #BA4693
+    font-family: "RobotoRegular", sans-serif
+    font-size: 1rem
+    color: white
+    width: 388px
+    line-height: 1.75
+  .home-img
+    padding-top: 16px
+    position: relative
+    left: -1px
+    img
+      width: 100%
+      height: auto
+  .home-detail
+    position: absolute
+    bottom: -1%
+    left: 46.7%
+    color: white
+    font-size: 1.4rem
+  .home-detail::after
+    content: ' '
+    display: inline-block
+    position: absolute
+    bottom: -20%
+    left: 0
+    width: 100%
+    height: 4px
+    background-color: white
+  .home-heart
+    position: absolute
+    left: -12%
+    top: 94.3%
+    color: $orange
+    font-size: 2rem
+    span
+      margin-left: 20px
+      font-size: 1rem
+      color: $line-hover
+      letter-spacing: 2px
+      font-family: 'BuiltTitlingRegular'
+      font-weight: 400
+      font-size: calc( 26 / 16 * 1rem )
+  .home-heart::after
+    content: ''
+    display: inline-block
+    position: absolute
+    bottom: -43%
+    left: -1px
+    width: 114%
+    height: 4px
+    background-color: white
+  +mobile
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 50px
+    .home-container
+      flex-direction: column
+    .home-paragraph
+      position: static
+      width: 100%
+      margin-top: 50px
+      padding: 20px
+      height: auto
+    .home-title
+      width: 100%
+      text-align: center
+      font-size: 2.5rem
+      letter-spacing: 2px
+    .home-heart
+      top: 104%
+      left: 10%
+    .home-detail
+      bottom: -10%
+      left: 83%
+    .home-img
+      text-align: center
+      img
+        width: 60%
+
+.product
+  background-color: $blue
+  padding: 245px 0px 192px 126px
+  .product-container
+    max-width: 1240px
+    margin: 0 auto
+    display: flex
+    padding-top: 9px
+  .product-list
+    display: flex
+    gap: 29px
+    position: relative
+    right: -14.2%
+    top: 3px
+  .product-item
+    width: calc( 255 / 16 * 1rem )
+    height: calc(457 / 16 * 1rem)
+  .top
+    height: 241px
+    position: relative
+    overflow: hidden
+    img
+      width: 100%
+  .product1
+    background-color: white
+    a
+      color: $gray
+    .product-card
+      padding-top: 30px
+      color: $gray
+    .card-title
+      padding-top: 17px
+      letter-spacing: 2.3px
+  .product2
+    background-color: $purple
+    color: white
+    a
+      color: white
+    .product-card
+      padding-top: 32px
+    .card-title
+      padding-top: 16px
+      letter-spacing: 2px
+  .product3
+    background-color: $orange
+    color: white
+    .product-card
+      padding-top: 26px
+      padding-left: 33px
+    .card-title
+      padding-top: 16px
+      letter-spacing: 2px
+      padding-left: 0
+    a
+      color: white
+    .top
+      height: calc(216 / 16 * 1rem)
+  .fa-capsules
+    font-size: calc( 87.24 / 16 * 1rem  )
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    color: $line-hover
+  .product-card
+    padding: 32px
+    padding-left: 31px
+    position: relative
+  .card-tag
+    font-size: 1rem
+    font-weight: 400
+    letter-spacing: 1.5px
+  .card-title
+    font-size: calc( 22 / 16 * 1rem )
+    font-family: 'BuiltTitlingBoldItalic'
+    letter-spacing: 2.4px
+    padding-left: 1px
+    padding-right: 34px
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    overflow: hidden
+  .card-icon
+    position: absolute
+    right: 6%
+    bottom: 2%
+    color: $gray
+  .product-introduction
+    width: 30%
+    h2
+      width: 424px
+      font-size: calc(53.88 / 16 * 1rem)
+      color: white
+      font-weight: 400
+      letter-spacing: 5.4px
+      margin: 0
+      padding-left: 4px
+    p
+      font-family: 'RobotoRegular', sans-serif
+      line-height: 1.75
+      width: 446px
+      margin-top: 39px
+      padding-left: 2px
+      color: white
+  .btn-product
+    width: 445px
+    margin-top: 108px
+    background: $blue-light
+    padding: 54px 132px
+    color: white
+    letter-spacing: 3px
+    font-size: calc( 18 / 16 * 1rem )
+    cursor: pointer
+    text-align: center
+    margin-left: 4px
+    a
+      position: relative
+    a::after
+      content: " "
+      top: 141%
+      left: -15%
+      position: absolute
+      height: 4px
+      width: 129%
+      background-color: $line-hover
+  +mobile 
+    padding: 50px 20px
+    .product-container
+      flex-direction: column
+    .product-introduction
+      width: 100%
+      h2
+        width: 100%
+        text-align: center
+        font-size: 2.5rem
+        letter-spacing: 2px
+      p
+        width: 100%
+    .btn-product
+      width: 100%
+      padding: 54px 0
+    .product-list
+      flex-direction: column
+      position: static
+      padding-left: 0
+      margin-top: 50px
+    .product-item 
+      width: 100%
+      height: auto
+      .top
+        height: auto
+      img
+        width: 100%
+    .product2
+      .top
+        height: calc(216 / 16 * 1rem)
+    .card-icon
+      right: 8%
+      bottom: 13%
+  @media screen and (min-width: 1650px)
+    .product3
+      overflow: hidden
+      img
+        width: 100%
+
+.blog
+  padding: 40px
+  background-color: #E6E1F0
+  .blog-container
+    max-width: 1520px
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    overflow: hidden
+  .blog-content
+    width: 50%
+    padding-top: 204px
+    padding-left: 205px
+    background-color: white
+  .blog-tag
+    font-size: 2rem
+    letter-spacing: 2.5px
+    padding-left: 1px
+    color: $gray
+    font-family: 'BuiltTitlingBoldItalic'
+  .blog-title
+    +titleSection(53.88)
+    width: 38%
+    display: inline-block
+    margin-top: 21px
+    padding-left: 2px
+    color: $purple
+  .blog-description
+    line-height: 1.75
+    font-family: 'RobotoRegular'
+    width: 28rem
+    display: inline-block
+    margin-top: 14.5px
+    color: $gray
+  .blog-img
+    transform: scaleY(1.01)
+    img
+      width: 766px
+      height: 886px
+      object-fit: cover
+  +mobile 
+    padding: 20px
+    .blog-container
+      flex-direction: column
+    .blog-content
+      width: 100%
+      padding-left: 20px
+      padding-right: 20px
+      padding-top: 50px
+    .blog-tag
+      font-size: 1.5rem
+    .blog-title
+      width: 100%
+      margin-top: 0
+      font-size: 2.5rem
+      text-align: center
+      letter-spacing: 2px
+    .blog-description
+      width: 100%
+    .blog-img
+      img
+        width: 100%
+        height: 100%
+
+.event
+  .event-bg
+    position: relative
+    .event-img
+      width: 100%
+  .slide-icon
+    position: absolute
+    z-index: 50
+    top: 56.8%
+    cursor: pointer
+  .next
+    right: 4.5%
+  .prev
+    left: 5.6%
+  .event-content
+    background-color: $purple-light
+    position: relative
+    z-index: 50
+    margin-top: -56px
+  .event-container
+    display: flex
+    gap: 17px
+    padding-left: 95px
+    max-width: 1300px
+    margin: 0 auto
+  .event-tag
+    color: $line-hover
+    font-size: 1rem
+    font-family: 'BuiltTitlingBoldItalic'
+    margin-bottom: 0
+    letter-spacing: 1.5px
+  .event-title
+    +titleSection(53.88)
+    color: white
+  .event-info
+    width: 650px
+    padding-top: 69px
+    padding-bottom: 53px
+    display: flex
+    flex-direction: column
+    gap: 6px
+  .event-description
+    color: white
+    line-height: 1.75
+    font-family: 'RobotoRegular'
+    width: 436px
+    margin: 0
+  .event-calendar
+    background-color: $purple
+    .event-date
+      color: $line-hover
+      font-size: calc( 32 / 16 * 1rem )
+      letter-spacing: 3px
+  .calendar-wrap
+    padding: 72px 25px 0px 25px
+    width: 257px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 24px
+  .event-wrap
+    display: flex
+    align-items: baseline
+    position: relative
+    img
+      position: absolute
+      left: -3px
+      top: 2px
+    span
+      color: white
+      font-size: 2rem
+      letter-spacing: 3.3px
+      padding-left: 36px
+  .event-location
+    padding-top: 126px
+    padding-left: 35px
+  .event-address
+    font-family: 'RobotoRegular'
+    color: white
+    padding-left: 36px
+    padding-top: 5px
+  +mobile
+    .slide-icon
+      width: 10%
+    .event-content
+      margin-top: -1px
+    .event-container
+      flex-direction: column
+      padding-left: 0
+    .event-title
+      font-size: 2.5rem
+      letter-spacing: 2px
+    .event-info
+      padding: 20px
+      width: 100%
+    .event-location
+      padding: 0 20px
+    .event-description
+      width: 100%
+    .calendar-wrap
+      padding: 20px
+      width: 100%
+      flex-direction: row
+      img
+        width: 50px
+      .event-date
+        margin: 0
+    .event-wrap
+      span
+        padding-left: 74px
+      img
+        left: 0
+    .event-address
+      padding-left: 74px
+
+.package
+  padding: 184px 0px 222px 6px
+  display: flex
+  justify-content: center
+  position: relative
+  .package-img 
+    position: absolute
+    left: 51%
+    top: 19.6%
+  .package-content
+    display: flex
+    flex-direction: column
+    gap: 39px
+  .package-title
+    +titleSection(53.88)
+    color: $orange
+    width: 40%
+    padding-left: 2px
+  .package-description
+    font-family: 'RobotoRegular'
+    line-height: 1.75
+    width: 39%
+    margin-bottom: 0
+    margin-top: 2px
+    padding-left: 2px
+    color: $gray
+    font-weight: 400
+  .package-list
+    padding: 0
+    color: $gray
+    margin-top: 7px
+    li
+      display: flex
+      align-items: baseline
+      gap: 36px
+      position: relative
+      margin-top: -2px
+  .package-item
+    margin-top: 3px
+    margin-left: 67px
+    letter-spacing: 0.1px
+    h3
+      margin: 0
+      font-size: 2rem
+      letter-spacing: 3.2px
+      font-weight: 400
+    p
+      margin-bottom: 0
+      margin-left: 4px
+      margin-top: 0.5px
+      font-family: 'RobotoRegular'
+      font-weight: 700
+      font-size: 1rem
+  .package-icon
+    color: $orange
+    font-size: 2rem
+    position: absolute
+    left: 3px
+    top: 6px
+  +mobile 
+    padding: 50px 20px
+    flex-direction: column
+    .package-list
+      h3 
+        font-size: 1.5rem
+    .package-title
+      width: 100%
+      font-size: 2.5rem
+      padding-left: 0
+      text-align: center
+      letter-spacing: 2px
+    .package-description
+      width: 100%
+      margin-top: 0px
+    .package-img
+      position: static
+    .package-item
+      h3
+        letter-spacing: 1px
+
+.register
+  .register-form
+    background-color: $orange
+    padding: 173px 0px 232px 244px
+    width: 72.9%
+    display: flex
+    position: relative
+    form 
+      display: flex
+      flex-direction: column
+      gap: 18px
+      margin-top: 40px
+      input
+        +input($gray, white)
+        width: 443px
+      input::placeholder
+          color: $gray
+      button
+        align-self: baseline
+        background-color: $gray
+        font-size: calc( 32 / 16 * 1rem )
+        padding-top: 12px
+        padding-bottom: 8px
+        padding-left: 3px
+        color: white
+        cursor: pointer
+        letter-spacing: 3.3px
+        width: 38.4%
+        margin-top: -1px
+  .register-title
+    +titleSection(96)
+    width: 64%
+    color: white
+    letter-spacing: 9.8px !important
+  .register-img
+    position: absolute
+    right: -256px
+    top: 10.45%
+  +mobile 
+    .register-form
+      width: 100%
+      padding: 50px 20px
+      flex-direction: column
+      form 
+        input
+          width: 100%
+          height: 50px
+          font-size: 1.5rem
+        button
+          align-self: center
+    .register-img
+      position: static
+      margin-top: 30px
+      img 
+        width: 100%
+    .register-title
+      width: 100%
+      font-size: 4rem
+      text-align: center
+      letter-spacing: 3px
+    
+.staff
+  background-image: url('../img/staff.png')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position-x: -9px
+  height: 969px
+  margin-top: -4px
+  position: relative
+  .staff-container
+    color: white
+    max-width: 1300px
+    margin: 0 auto
+    padding-top: 161px
+    padding-left: 90px
+    padding-bottom: 133px
+  .staff-introduction
+    background: $gray
+    padding-top: 38px
+    padding-left: 46px
+    padding-bottom: 116px
+    padding-right: 20px
+    width: 445px
+  .staff-tag
+    color: $orange
+    font-size: 1rem
+    font-family: 'BuiltTitlingBoldItalic'
+    letter-spacing: 1.5px
+    margin-bottom: 0
+  .staff-tag2
+    font-size: 1rem
+    font-family: 'BuiltTitlingBoldItalic'
+    letter-spacing: 1.5px
+    margin-bottom: 0
+  .staff-title
+    +titleSection(53.88)
+  .staff-description1
+    font-family: 'RobotoRegular'
+    position: relative
+    z-index: 30
+    margin-top: 0px
+    line-height: 18.6px
+  .staff-description2
+    font-family: 'RobotoRegular'
+    position: relative
+    z-index: 30
+    margin-top: -22px
+    line-height: 18.6px
+    .staff-avt
+      position: absolute
+      left: 0
+      top: 183%
+      z-index: 40
+  .staff-content
+    display: flex
+    width: 445px
+  .staff-text
+    background-color: $blue
+    width: 57%
+    padding-left: 47px
+    padding-top: 32px
+    padding-bottom: 31px
+    padding-right: 87px
+    font-weight: 400
+    h3
+      margin-top: 16px
+      font-size: calc( 32 / 16 * 1rem )
+      letter-spacing: 3.2px
+      font-weight: 400
+      width: 160px
+  .staff-icon
+    width: 43%
+    display: flex
+    flex-direction: column
+    font-size: calc( 32 / 16 * 1rem )
+  .fa-bullhorn
+    background-color: $purple
+    padding: 39px
+    text-align: center
+  .fa-flask
+    background-color: $orange
+    padding: 41px
+    text-align: center
+  +mobile 
+    .staff-container
+      padding-left: 20px
+      padding-right: 20px
+    .staff-introduction
+      width: 100%
+      padding: 20px 20px 95px 20px
+    .staff-content
+      width: 100%
+    .staff-description
+      text-align: justify
+    .staff-text
+      padding-left: 20px
+      padding-right: 20px
+      h3
+        width: 100%
+
+.contact
+  position: relative
+  background-color: #E6E1F0
+  padding-top: 19px
+  padding-bottom: 40px
+  &::before
+    position: absolute
+    display: block
+    content: ''
+    background: url(../img/decoration_map.png) center/cover no-repeat
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+  .contact-container
+    background-image: url(../img/map.png) 
+    background-repeat: no-repeat 
+    background-size: cover 
+    height: 100% 
+    padding-left: 6px 
+    padding-top: 196px 
+    padding-bottom: 140px
+  .contact-img
+    width: 100%
+  .contact-register 
+    max-width: 1000px
+    margin: 0 auto
+    width: 922px
+    display: flex
+    color: white
+    position: relative
+    z-index: 90
+  .contact-content
+    background-color: $purple
+    width: 39.65%
+    padding-top: 33px
+    padding-left: 35px
+    h4
+      +titleSection(48)
+      letter-spacing: 4.7px !important
+  .contact-description
+    font-family: 'RobotoRegular'
+    line-height: 1.75
+    margin-bottom: 0
+    margin-top: 32px
+    padding-right: 10px
+  .contact-phone
+    display: flex
+    align-items: flex-start
+    gap: 12px
+    font-family: 'RobotoRegular'
+    font-size: 2rem
+    margin-top: 37px
+    font-weight: 700
+    letter-spacing: 0.3px
+  .contact-social 
+    display: flex
+    gap: 20px
+    margin-top: 49px
+  .contact-call 
+    display: flex
+    align-items: baseline
+    gap: 12px
+    font-family: 'RobotoRegular'
+    font-size: 2rem
+    margin-top: 51px
+    a
+      color: white
+  .contact-form
+    background-color: $gray
+    width: 60%
+    padding: 32px 35px 40px 35px
+    h2
+      +titleSection(48)
+      letter-spacing: 4.7px !important
+    form
+      display: flex
+      flex-direction: column
+      gap: 21px
+      margin-top: 39px
+      padding-left: 2px
+      input
+        +input(white, #58595B)
+        padding: 7px 16px 0px 19px !important
+      input::placeholder
+        color: white
+      textarea
+        background-color: #58595B
+        font-size: 2rem
+        padding: 5px 19px
+        letter-spacing: 3.5px
+        color: white
+        outline: none
+        height: 168px
+      textarea::placeholder
+        color: white
+      button
+        letter-spacing: 3.3px
+        align-self: baseline
+        background-color: #EA572A
+        font-size: 2rem
+        padding: 10px 0px 10px 4px
+        color: white
+        cursor: pointer
+        margin-top: -3px
+        width: 49.5%
+  +mobile 
+    padding: 20px
+    .contact-container
+      padding: 20px
+    .contact-register
+      flex-direction: column
+      width: 100%
+      padding-top: 20px
+    .contact-content
+      width: 100%
+      padding: 20px
+    .contact-description
+      padding: 0
+    .contact-phone
+      font-size: 1.5rem
+    .contact-form
+      width: 100%  
+      padding: 20px
+      form
+        button
+          align-self: center
+@import '_footer'
