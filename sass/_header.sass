@@ -22,13 +22,14 @@ header
     letter-spacing: 2.7px
     height: 129px
   .menu1
-    width: 373px
-    padding-left: 17px
+    width: 372px
+    padding-left: 7px
+    cursor: none
   .menu2
-    padding-left: 15px
+    padding-left: 6px
     width: 360px
   .menu3
-    padding-right: 28px
+    padding-right: 36px
     width: 300px
   .menu-item:not(.menu1):hover
     text-transform: lowercase !important
@@ -58,17 +59,19 @@ header
     content: ''
     background-color: white
     position: absolute
-    width: 44%
+    width: 43%
     height: 4px
     bottom: 31%
-    right: 27%
+    right: 29%
+    margin-bottom: 1px
   .navigation-right
     display: flex
     align-items: center
-    gap: 40px
+    gap: 2rem
     top: 4%
     left: 16.5%
     position: relative
+    cursor: pointer
     .nav-icon
       color: $line-hover
       position: relative
@@ -115,7 +118,7 @@ header
       0%
         width: 0%
       100%
-       width: 60%
+        width: 60%
     a
       padding: 53px 0px
   +mobile
@@ -127,16 +130,17 @@ header
     top: 0
     width: 100%
     z-index: 100
-    .header    
+    .header
       gap: 20px
       justify-content: flex-start
     .navigation-left
       display: none
     .navigation-right
       left: 0
-      gap: 10px
+      gap: 0.1rem
       ul
         order: 1
+        padding-bottom: 8px
       .nav-icon
         .fa-comment-dots::after
           bottom: -20%
@@ -159,4 +163,4 @@ header
       width: 100%
     .logo
       margin-left: -20px
-    
+      flex: 0 0 auto

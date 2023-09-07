@@ -265,15 +265,16 @@ header .menu-item {
   height: 129px;
 }
 header .menu1 {
-  width: 373px;
-  padding-left: 17px;
+  width: 372px;
+  padding-left: 7px;
+  cursor: none;
 }
 header .menu2 {
-  padding-left: 15px;
+  padding-left: 6px;
   width: 360px;
 }
 header .menu3 {
-  padding-right: 28px;
+  padding-right: 36px;
   width: 300px;
 }
 header .menu-item:not(.menu1):hover {
@@ -308,18 +309,20 @@ header .active::before {
   content: "";
   background-color: white;
   position: absolute;
-  width: 44%;
+  width: 43%;
   height: 4px;
   bottom: 31%;
-  right: 27%;
+  right: 29%;
+  margin-bottom: 1px;
 }
 header .navigation-right {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 2rem;
   top: 4%;
   left: 16.5%;
   position: relative;
+  cursor: pointer;
 }
 header .navigation-right .nav-icon {
   color: #E5E0F0;
@@ -403,10 +406,11 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   }
   header .navigation-right {
     left: 0;
-    gap: 10px;
+    gap: 0.1rem;
   }
   header .navigation-right ul {
     order: 1;
+    padding-bottom: 8px;
   }
   header .navigation-right .nav-icon .fa-comment-dots::after {
     bottom: -20%;
@@ -435,6 +439,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   }
   header .logo {
     margin-left: -20px;
+    flex: 0 0 auto;
   }
 }
 
@@ -478,10 +483,9 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   height: 197px;
   top: 29.5%;
   left: 52%;
-  padding-top: 25px;
+  padding-top: 26px;
   padding-left: 46px;
   padding-right: 15px;
-  padding-bottom: 30px;
   background-color: #BA4693;
   font-family: "RobotoRegular", sans-serif;
   font-size: 1rem;
@@ -526,7 +530,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   margin-left: 20px;
   font-size: 1rem;
   color: #E5E0F0;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   font-family: "BuiltTitlingRegular";
   font-weight: 400;
   font-size: 1.625rem;
@@ -716,9 +720,8 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   background: #5da7d9;
   padding: 54px 132px;
   color: white;
-  letter-spacing: 3px;
+  letter-spacing: 0.15em;
   font-size: 1.125rem;
-  cursor: pointer;
   text-align: center;
   margin-left: 4px;
 }
@@ -756,6 +759,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   .product .btn-product {
     width: 100%;
     padding: 54px 0;
+    margin-top: 0 !important;
   }
   .product .product-list {
     flex-direction: column;
@@ -864,6 +868,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
     font-size: 2.5rem;
     text-align: center;
     letter-spacing: 2px;
+    font-family: "BuiltTitlingRegular";
   }
   .blog .blog-description {
     width: 100%;
@@ -921,8 +926,8 @@ header input[type=checkbox]:checked ~ .navigation-left a {
 }
 .event .event-info {
   width: 650px;
-  padding-top: 69px;
-  padding-bottom: 53px;
+  padding-top: 71px;
+  padding-bottom: 51px;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -1011,12 +1016,14 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   }
   .event .calendar-wrap .event-date {
     margin: 0;
+    margin-top: 6px;
   }
   .event .event-wrap span {
     padding-left: 74px;
   }
   .event .event-wrap img {
-    left: 0;
+    left: 15px;
+    top: 11px;
   }
   .event .event-address {
     padding-left: 74px;
@@ -1082,7 +1089,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   font-weight: 400;
 }
 .package .package-item p {
-  margin-bottom: 0;
+  margin-bottom: -1px;
   margin-left: 4px;
   margin-top: 0.5px;
   font-family: "RobotoRegular";
@@ -1166,7 +1173,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   padding-left: 3px;
   color: white;
   cursor: pointer;
-  letter-spacing: 3.3px;
+  letter-spacing: 0.1em;
   width: 38.4%;
   margin-top: -1px;
 }
@@ -1217,7 +1224,6 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   background-image: url("../img/staff.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: -9px;
   height: 969px;
   margin-top: -4px;
   position: relative;
@@ -1261,14 +1267,14 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   font-family: "RobotoRegular";
   position: relative;
   z-index: 30;
-  margin-top: 0px;
+  margin-top: 2px;
   line-height: 18.6px;
 }
 .staff .staff-description2 {
   font-family: "RobotoRegular";
   position: relative;
   z-index: 30;
-  margin-top: -22px;
+  margin-top: -23px;
   line-height: 18.6px;
 }
 .staff .staff-description2 .staff-avt {
@@ -1285,9 +1291,8 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   background-color: #3994D1;
   width: 57%;
   padding-left: 47px;
-  padding-top: 32px;
-  padding-bottom: 31px;
-  padding-right: 87px;
+  padding-top: 28px;
+  padding-bottom: 24px;
   font-weight: 400;
 }
 .staff .staff-text h3 {
@@ -1310,7 +1315,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
 }
 .staff .fa-flask {
   background-color: #EA572A;
-  padding: 41px;
+  padding: 39px;
   text-align: center;
 }
 @media screen and (max-width: 767.98px) {
@@ -1511,6 +1516,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
   .contact .contact-form {
     width: 100%;
     padding: 20px;
+    margin-bottom: 30px;
   }
   .contact .contact-form form button {
     align-self: center;
@@ -1538,6 +1544,7 @@ footer .footer-menu {
 footer .footer-menu nav {
   display: flex;
   gap: 115px;
+  cursor: pointer;
 }
 footer .footer-menu nav a {
   font-size: 1.125rem;
@@ -1619,5 +1626,29 @@ footer .footer-list .footer-menu-item:nth-child(4) {
   }
   footer .footer-logo img {
     padding: 27px;
+  }
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1600px;
+  }
+  @page {
+    margin: 0;
+    size: 11in 14.028in;
+  }
+  @page :left {
+    margin: 0;
+  }
+  @page :right {
+    margin: 0;
+  }
+  @page :first {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
