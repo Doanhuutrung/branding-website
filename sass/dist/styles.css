@@ -867,6 +867,7 @@ header input[type=checkbox]:checked ~ .navigation-left a {
     font-size: 2.5rem;
     text-align: center;
     letter-spacing: 2px;
+    font-family: "BuiltTitlingRegular";
   }
   .blog .blog-description {
     width: 100%;
@@ -1615,5 +1616,31 @@ footer .footer-list .footer-menu-item:nth-child(4) {
   }
   footer .footer-logo img {
     padding: 27px;
+  }
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+
+  html,
+body {
+    margin: 0;
+    width: 1600px;
+  }
+
+  @page {
+    margin: 0;
+    size: 11in 14.028in;
+  }
+  @page :left {
+    margin: 0;
+  }
+  @page :right {
+    margin: 0;
+  }
+  @page :first {
+    margin-top: 0;
   }
 }
