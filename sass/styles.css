@@ -1527,15 +1527,14 @@ footer {
   background-color: #414042;
   padding-top: 159px;
   padding-bottom: 145px;
-  padding-left: 240px;
 }
-footer .footer-container {
+/* footer .footer-container {
   position: relative;
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-}
+} */
 footer .footer-menu {
   display: flex;
   justify-content: center;
@@ -1595,7 +1594,6 @@ footer .footer-list .footer-menu-item:nth-child(4) {
 @media screen and (max-width: 767.98px) {
   footer {
     padding: 50px 0 0 0;
-    padding-left: 189px;
   }
   footer .footer-container {
     display: block;
