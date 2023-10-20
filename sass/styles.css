@@ -1527,7 +1527,7 @@ footer {
   background-color: #414042;
   padding-top: 159px;
   padding-bottom: 145px;
-  padding-left: 189px;
+  padding-left: 240px;
 }
 footer .footer-container {
   position: relative;
@@ -1595,6 +1595,7 @@ footer .footer-list .footer-menu-item:nth-child(4) {
 @media screen and (max-width: 767.98px) {
   footer {
     padding: 50px 0 0 0;
+    padding-left: 189px;
   }
   footer .footer-container {
     display: block;
